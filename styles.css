@@ -1,0 +1,322 @@
+:root{
+    --websiteBG: hsl(218, 28%, 13%);
+    --border: 2px solid red;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* GLOBAL STYLES START*/
+li{
+    list-style: none;
+    margin: 0.5rem;
+    font-family: Raleway;
+    font-weight: 700;
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Raleway;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+input{
+    outline: none;
+}
+/* GLOBAL STYLES END */
+
+body{
+    background: var(--websiteBG);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: hsl(217, 28%, 15%);
+}
+nav img{
+    height: 2rem;
+}
+
+nav ul{
+    display: flex;
+}
+ul li{
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3rem;
+    background-color: hsl(217, 28%, 15%);
+}
+.intro img{
+    width: 100%;
+    background: hsl(217, 28%, 15%);
+}
+.wavy-bg{
+    width: 100%;
+    text-align: center;
+    background: var(--websiteBG);
+    
+}
+.wavy-bg h1{
+    padding:1rem 2.5rem;
+}
+.wavy-bg p{
+    padding: 0 2rem;
+}
+.get-started{
+    background:hsl(198, 60%, 50%);
+    height: 3rem;
+    width: 150px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    margin-top: 2rem;
+    transition: all 0.3s linear;
+}
+button:hover{
+    background: hsl(176, 68%, 64%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* FEATURES STYLES START*/
+.features{
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr ));
+    align-items: center;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    height: 300px;
+}
+.feature img{
+    width: 25%;
+    margin-bottom: 1rem;
+}
+.feature h2{
+    margin-bottom: 0.5rem;
+}
+/* FEATURES STYLES END */
+/* ACTIVE STYLE STARTS*/
+.active{
+    width: 100%;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: center;
+}
+.active img{
+    width: 100%;
+}
+.fylo-works{
+    display: inline-flex;
+    flex-direction: column;
+}
+.active a{
+    display: flex;
+    align-items: center;
+    color: hsl(176, 68%, 64%);
+    margin-top: 1rem;
+    transition: 0.3s linear transform;
+}
+.active a:hover{
+    transform: translateX(10px);
+}
+.active a img{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+.active hr{
+    margin-top: 0.2rem;
+    width: 100%;
+    height: 0.2rem;
+    background: hsl(176, 68%, 64%);
+    
+}
+/* ACTIVE STYLE ENDS */
+/* REVIEWS STYLE START*/
+.quote {
+    margin-top: 3rem;
+    margin-left: 2.7rem;
+    height: 25px;
+}
+.reviews{
+    /* height: 110vh; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.review{
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    background: #21293C;
+    padding: 1rem ;
+    margin-bottom: 2rem;
+    transition: 0.3s ease-in-out transform;
+}
+.person{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.person img{
+    border-radius: 50%;
+    height: 50px;
+    margin-left: 0;
+}
+.person h5{
+    padding:0 0.5rem;
+    font-size: 1.2rem;
+}
+span{
+    font-size: 1rem;
+    font-weight: 100;
+}
+.card{
+    /* height: 30vh; */
+    position: relative;
+    top: 150px;
+    width: 80%;
+    margin: 0 auto;
+    background: #21293C;
+    text-align: center;
+    padding: 2rem 0.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    
+}
+.card input, button{
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    padding: 0 1rem;
+    border: none;
+    margin: 0.5rem;
+    font-weight: 400;
+}
+.card button{
+    color: white;
+    margin-bottom: 1rem;
+    background: hsl(176, 68%, 64%);
+    transition: all 0.3s linear;
+}
+
+/* REVIEWS STYLE END */
+/* FOOTER STYLE START*/
+footer{
+    background: hsl(216, 53%, 9%);
+    padding: 2rem;
+    padding-top: 13rem;
+}
+.foot{
+    margin-top: 2rem;
+    display: flex;
+}
+.foot img{
+    height: 20px;
+}
+.foot p{
+    margin-left: 1rem;
+}
+footer ul{
+    margin-top: 3rem;
+}
+.sm-icons{
+    display: flex;
+    justify-content: center;
+}
+.sm-icons i{
+    margin: 1rem;
+}
+/* FOOTER STYLE END */
+
+/* MEDIA QUERIES MIN-WIDTH 900PX */
+@media screen and (min-width: 900px) {
+.fa-bars{
+    display: none;
+}
+nav li:hover{
+    color: #62E0D9;
+    transform: scale(1.1);
+}
+.intro img {
+    width: 40%;
+    height: 50%;
+    
+}
+.wavy-bg {
+    width: 100%;
+    padding: 0 25rem;
+}
+.get-started {
+    width: 250px;
+}
+    
+.features {
+    padding: 0 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.active-text{
+    padding-left: 2rem;
+}
+.active {
+    padding:0 5rem;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.quote {
+    margin-top: 8rem;
+    margin-left: 6.7rem;
+}
+.reviews {
+    grid-template-columns: repeat(3, 1fr);
+    height: 30vh;
+    padding: 0 4rem;
+}
+.review:hover{
+    transform: scale(1.1);
+}
+.card {
+    width: 60%;
+    height: 300px;
+    padding: 5rem;
+}
+.btns{
+    display: flex;
+}
+.card input{
+    width: 70%;
+}
+.card button{
+    width: 30%;
+}
+}
